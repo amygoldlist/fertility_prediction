@@ -18,10 +18,11 @@ output_file <- args[2]
 
 
 ###read new CSV files
-data <- read_csv(input_file)
-
+data <- read.csv(input_file)
+##data <- read.csv("results/grades_train.csv")
 
 ### recode all factors as numbers
+
 
 data_int <- data %>% 
   mutate(school = as.numeric(school),
