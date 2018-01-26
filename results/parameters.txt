@@ -1,0 +1,7 @@
+Here are the features selected!
+Empty DataFrame
+Columns: [failures, guardian, traveltime, Fedu, schoolsup, school, famsize, studytime, sex, romantic]
+Index: []
+Using SVR on our smaller set with epsilon =0, kernel =rbf.
+The MSE is 12.5808153211
+The test MSE is 25.0037126101
