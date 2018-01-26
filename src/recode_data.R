@@ -6,6 +6,9 @@
 ## This will make it easier to work in sklearn
 ## This should be called twice
 
+
+library(tidyverse)
+
 # read in command line argument
 args <- commandArgs(trailingOnly = TRUE)
 input_file <- args[1]
@@ -15,7 +18,7 @@ output_file <- args[2]
 
 
 ###read new CSV files
-data <- read_csv(data_train, input_file)
+data <- read_csv(input_file)
 
 
 ### recode all factors as numbers

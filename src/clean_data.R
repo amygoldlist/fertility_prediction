@@ -49,28 +49,3 @@ data_test <- df %>%
 write_csv(data_train, "results/grades_train.csv")
 write_csv(data_test, "results/grades_test.csv")
 
-### recode all factors as numbers
-
-data_int <- data %>% 
-  mutate(school = as.numeric(school),
-         sex = as.numeric(sex),
-         address = as.numeric(address),
-         famsize = as.numeric(famsize),
-         Pstatus = as.numeric(Pstatus),
-         Mjob = as.numeric(Mjob),
-         Fjob = as.numeric(Fjob),
-         reason = as.numeric(reason),
-         guardian = as.numeric(guardian),
-         schoolsup=as.numeric(schoolsup),
-         famsup=as.numeric(famsup),
-         paid = as.numeric(paid),
-         activities=as.numeric(activities),
-         nursery = as.numeric(nursery),
-         higher = as.numeric(higher),
-         internet = as.numeric(internet),
-          romantic = as.numeric(romantic)
-         ) 
-  
-write_csv(data_int, "results/int_grades.csv")
-
-#str(data)
