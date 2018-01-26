@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSe
 
 
 ## get data
-grades = pd.read_csv("results/math_grades.csv")
+grades = pd.read_csv("results/int_grades.csv")
 
 ##find grade shape
 #grades.shape()
