@@ -9,11 +9,48 @@ I chose to use Support Vector Regression with an rbf kernel.  I used cross valid
 ### About the data
 This data set is available from the UCI Machine Learning library [here](https://archive.ics.uci.edu/ml/datasets/student+performance).  This dataset consists of two CSV files, one for math scores and one for Portuguese language scores.  This data was all gathered in Portugal, and has several intermediate grade scores, along with 30 different features, showing demographics of the student and family.  I chose to focus exclusively on math scores.
 
+### To run
+
+#### With Make
+To run the full analysis, clone the full repository, and from the root use the command:
+
+```
+make all
+```
+
+To delete all the files, use the command:
+
+```
+make clean
+```
+
+#### With Docker
+
+To avoid any software dependency errors, feel free to download the docker image for this repo with
+
+```
+docker pull goldlist/student_performance_predictions
+```
+
+To run the full script, use
+```
+docker run --rm -it -v  C:\Path\to\cloned\repo:/home/student_performance_predictions goldlist/student_performance_predictions make -C 'home/student_performance_predictions' all
+```
+
+and to delete:
+
+```
+docker run --rm -it -v  C:\Path\to\cloned\repo:/home/student_performance_predictions goldlist/student_performance_predictions make -C 'home/student_performance_predictions' clean
+```
+
+Make sure to replace `C:\Path\to\cloned\repo` with the path to the cloned repo on your own computer.
+
 ### Software Dependencies
 The analysis was performed with R and Python 3.xx.  
 
 ##### R packages used
 * tidyverse
+* cowplot
 
 ##### Python libraries used
 * numpy
