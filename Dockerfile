@@ -37,11 +37,3 @@ RUN pip3 install scipy
 
 ##install sklearn
 RUN pip3 install sklearn
-
-
-### Scikit-Learn nightly build
-#RUN cd /usr/local/src
-#  && git clone https://github.com/scikit-learn/scikit-learn.git
-#  && \ cd scikit-learn
-#  && python setup.py build
-#  && python setup.py install && \
