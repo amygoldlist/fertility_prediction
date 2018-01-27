@@ -9,6 +9,20 @@ I chose to use Support Vector Regression with an rbf kernel.  I used cross valid
 ### About the data
 This data set is available from the UCI Machine Learning library [here](https://archive.ics.uci.edu/ml/datasets/student+performance).  This dataset consists of two CSV files, one for math scores and one for Portuguese language scores.  This data was all gathered in Portugal, and has several intermediate grade scores, along with 30 different features, showing demographics of the student and family.  I chose to focus exclusively on math scores.
 
+### Software Dependencies
+The analysis was performed with R and Python 3.xx.  
+
+##### R packages used
+* tidyverse
+
+##### Python libraries used
+* numpy
+* pandas
+* sklearn
+* collections
+
+##### Other tools
+* make
 
 ### Citation:
 P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.   [Online](http://www3.dsi.uminho.pt/pcortez/student.pdf) available.
