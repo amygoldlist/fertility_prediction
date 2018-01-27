@@ -25,8 +25,8 @@ test_set = pd.read_csv("results/grades_test_num.csv")
 n = test_set.shape[1]-1
 
 ##extract data
-ytest = grades.iloc[:,n].values
-Xtest = grades.iloc[:,0:n].values
+ytest = test_set.iloc[:,n].values
+Xtest = test_set.iloc[:,0:n].values
 
 ##Scoring functions
 
