@@ -58,7 +58,7 @@ In order to choose a smaller set of features, I performed a forward selection al
 * guardian: Who has guardianship, "mother", "father" or "other"
 * traveltime: home to school time
 * Fedu: father's education
-* school Sup: extra educational support
+* schoolsup: extra educational support
 * school: Which school they attend
 * famsize: family size
 * studytime: weekly study time
@@ -69,13 +69,21 @@ In order to choose a smaller set of features, I performed a forward selection al
 
 I fit the same SVM model as model 1 on the training data, but this time with only the 10 features above.  I then tested it on the test data, getting a training MSE score of 12.58 and a test MSE score of 25.00, a much lower approximation error.
 
-##### A success?
+#### More images
 
-Though we have a model which isn't an amazing predictor, the more important exercise was in identifying a set of features which are more relevant to student success.  
+Here, I have put the test and training data together, adn used the complete set to make thes images:
+
+![](results/images/final.png)
+
+These do seem to indicate some sort of differences across the board.
+
+##### Conclusion
+
+Though we have a model which isn't an amazing predictor, the more important exercise was in identifying a set of features which are more relevant to student success.  Unsurprisingly, this list includes some obvious features, such as weekly study time, number of past failures and whether they get extra support through school.  Some of these relationships are more surprising, including guardianship, father's education and family size.  It does seem interesting that those who are in a romantic relationship seem to have slightly lower scores than those with no romantic partner.
 
 ##### Next steps
 
-Look at each of the features selected, and see whether there is a measurable effect.
+The next steps would be to look at each of the features chosen individually, and try to understand how they may affect student success.  This should be done on a qualitative level, as well as quantitative.
 
 ## Citation:
 P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.   [Online](http://www3.dsi.uminho.pt/pcortez/student.pdf) available.
