@@ -5,3 +5,5 @@ d3=merge(d1,d2,by=c("school","sex","age","address","famsize","Pstatus","Medu","F
 print(nrow(d3)) # 382 students
 
 d3
+
+d1
