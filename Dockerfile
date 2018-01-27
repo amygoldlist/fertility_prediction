@@ -32,6 +32,8 @@ RUN pip3 install numpy
 ## install pandas
 RUN pip3 install pandas
 
+##install scipy
+RUN pip3 install scipy
 
 ##install sklearn
 RUN pip3 install sklearn
