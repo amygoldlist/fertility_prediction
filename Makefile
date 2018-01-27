@@ -61,3 +61,6 @@ clean:
 	rm -f results/test_predictions.csv
 	rm -f results/training_predictions.csv
 	rm -f results/images/final.png
+	rm -f results/final_fit.txt
+	rm -f results/foward_select_param.txt
+	rm -f results/parameters.txt
