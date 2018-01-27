@@ -1,7 +1,7 @@
 ##Import all needed modules
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet, LogisticRegression
 from sklearn.metrics import  mean_squared_error, SCORERS, make_scorer
 from sklearn.svm import SVR, LinearSVR
