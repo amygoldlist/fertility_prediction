@@ -1,7 +1,7 @@
-Here are the features selected!
-Empty DataFrame
-Columns: [failures, guardian, traveltime, Fedu, schoolsup, school, famsize, studytime, sex, romantic]
-Index: []
-Using SVR on our smaller set with epsilon =0, kernel =rbf.
-The MSE is 12.5808153211
-The test MSE is 25.0037126101
+Using SVR with epsilon =0, kernel =rbf.
+Find the optimal values of gamma and C using a gridsearch with 10-fold cross validation
+Here, the scoring is the negative Mean Squared Error
+{'C': 5000, 'gamma': 0.01}
+cross validation score for model:  28.9593657826
+The MSE is 5.53129102824e-08
+The test MSE is 29.732378089
